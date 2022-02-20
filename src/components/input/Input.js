@@ -31,11 +31,6 @@ function Input(props) {
 		setLogin(event.target.value)
 	}
 	const passwordChangeHandler = (event) => {
-		// let pass = event.target.value
-		// let arr = event.target.value.split('')
-		// let last = pass.slice(0, 2)
-		// let p = arr.reverse().push(last).join('')
-
 		setPassword(event.target.value)
 	}
 
@@ -53,7 +48,6 @@ function Input(props) {
 		let lastTwo = p.slice(0, 2)
 		let pass = p.reverse().concat(lastTwo).join('')
 
-		console.log(pass)
 		event.preventDefault()
 
 		props.getInpLog(email, login, pass)
